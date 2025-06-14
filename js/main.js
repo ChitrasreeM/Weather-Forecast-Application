@@ -93,7 +93,7 @@ document.body.classList.add(bgClass);
     return;
   }
 
-  for (let i = 0; i < Math.min(3, data.daily.time.length); i++) {
+  for (let i = 0; i < Math.min(7, data.daily.time.length); i++) {
     const date = new Date(data.daily.time[i]).toDateString();
     const code = data.daily.weathercode[i];
     const maxTemp = data.daily.temperature_2m_max[i];
